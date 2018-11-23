@@ -68,7 +68,7 @@ Set envirorment value
 
 make
 ----
-** Step 4 Get Debug APK **
+**Step 4 Get Debug APK**
 when make complete , the apk is in the folder
 
 bin/outputs/apk/debug
