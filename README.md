@@ -1,7 +1,7 @@
-Linphone Android Build By Ubuntu 18.04
+Linphone Android Build By Ubuntu 18.04  
 在 Ubuntu 18.04 編譯 Linphone Android
 ----
-**requirement**
+**requirement**  
 環境需求  
 - Ubuntu 18.04 (64 Bit)
 - Linphone Android
@@ -9,22 +9,23 @@ Linphone Android Build By Ubuntu 18.04
 - Android Studio
 - (android-ndk-r18b)
 
-*All use root account*
+*All use root account*  
 全程使用帳號
 ----
-**Step 1 Install JDK8 (Oracle)**
-*Must use JDK8*
-務必使用 JDK8    
+**Step 1 Install JDK8 (Oracle)**  
+安裝JDK8
+*Must use JDK8 (Oracle)*  
+務必使用 JDK8 (Oracle)   
+'''
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
 
-  sudo add-apt-repository ppa:webupd8team/java
-  sudo apt-get update
+sudo apt-get install oracle-java8-installer
 
-  sudo apt-get install oracle-java8-installer
+sudo update-alternatives --config java
 
-  sudo update-alternatives --config java
-
-  java -version
-
+java -version
+'''
 ----
 **Step 2 Download Android Studio**
 
@@ -32,7 +33,7 @@ goto https://developer.android.com/studio/
 Download Android Studio and unzip it.  
 Download NDK from android studio  
 Set envirorment value  
-
+'''
 /etc/profile
   export ANDROID_HOME=/root/Android/Sdk
   export ANDROID_NDK=/root/Android/Sdk/ndk-bundle
@@ -45,10 +46,10 @@ Set envirorment value
 
   source /etc/profile.d/jdk.sh
   source /etc/profile
-
+'''
 ----
 **Step 3 Get Linphone Android source code**
-
+'''
   git clone git://git.linphone.org/linphone-android.git --recursive
 
   sudo apt-get install yasm nasm ant intltool cmake vim-common lib32ncurses5 lib32z1 pkg-config
@@ -68,6 +69,7 @@ Set envirorment value
 ./prepare.py -c
 
   make
+'''
 ----
 **Step 4 Get Debug APK**
 when make complete , the apk is in the folder  
