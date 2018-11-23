@@ -10,7 +10,7 @@ Linphone Android Build By Ubuntu 18.04
 - (android-ndk-r18b)
 
 *All use root account*  
-全程使用帳號
+全程使用root帳號
 ----
 **Step 1 Install JDK8 (Oracle)**  
 安裝JDK8
