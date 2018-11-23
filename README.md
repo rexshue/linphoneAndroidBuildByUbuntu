@@ -6,6 +6,7 @@ Linphone Android Build By Ubuntu 18.04
 - Android Studio
 - (android-ndk-r18b)
 
+*All use root account*
 ----
 **Step 1 Install JDK8 (Oracle)**
 *Must use JDK8*
@@ -38,6 +39,12 @@ Set envirorment value
 
   export PATH=$GRADLE_HOME/bin:$PATH
 
+  echo $JAVA_HOME
+  echo $ANDROID_HOME
+
+  source /etc/profile.d/jdk.sh
+  source /etc/profile
+
 ----
 **Step 3 Get Linphone Android source code**
 
@@ -60,4 +67,8 @@ Set envirorment value
 ./prepare.py -c
 
 make
+----
+** Step 4 Get Debug APK **
+when make complete , the apk is in the folder
 
+bin/outputs/apk/debug
