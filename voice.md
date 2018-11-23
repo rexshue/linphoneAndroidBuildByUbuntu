@@ -1,5 +1,14 @@
 ## Voice Call 
 
+**Register**
+/src/android/org/linphone/assistant/AssistantActivity.java
+```
+lc.addProxyConfig(...)
+lc.addAuthInfo(...)
+lc.setDefaultProxyConfig(...)
+```
+
+**Voice Call**
 /src/android/org/linphone/ui/CallButton.java
 ```
 onClick()
