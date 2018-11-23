@@ -1,5 +1,8 @@
 Linphone Android Build By Ubuntu 18.04
+在 Ubuntu 18.04 編譯 Linphone Android
 ----
+**requirement**
+環境需求  
 - Ubuntu 18.04 (64 Bit)
 - Linphone Android
 - JDK 8u
@@ -7,9 +10,11 @@ Linphone Android Build By Ubuntu 18.04
 - (android-ndk-r18b)
 
 *All use root account*
+全程使用帳號
 ----
 **Step 1 Install JDK8 (Oracle)**
 *Must use JDK8*
+務必使用 JDK8    
 
   sudo add-apt-repository ppa:webupd8team/java
   sudo apt-get update
@@ -23,20 +28,16 @@ Linphone Android Build By Ubuntu 18.04
 ----
 **Step 2 Download Android Studio**
 
-goto https://developer.android.com/studio/
-Download Android Studio and unzip it.
-Download NDK from android studio
-Set envirorment value
+goto https://developer.android.com/studio/  
+Download Android Studio and unzip it.  
+Download NDK from android studio  
+Set envirorment value  
 
 /etc/profile
   export ANDROID_HOME=/root/Android/Sdk
-
   export ANDROID_NDK=/root/Android/Sdk/ndk-bundle
-
   export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK:$PATH
-
   export GRADLE_HOME=/home/user/android-studio/gradle/gradle-4.6
-
   export PATH=$GRADLE_HOME/bin:$PATH
 
   echo $JAVA_HOME
@@ -66,9 +67,8 @@ Set envirorment value
   ReRun
 ./prepare.py -c
 
-make
+  make
 ----
 **Step 4 Get Debug APK**
-when make complete , the apk is in the folder
-
+when make complete , the apk is in the folder  
 bin/outputs/apk/debug
