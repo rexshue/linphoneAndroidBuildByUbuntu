@@ -14,8 +14,11 @@ change the package name also in the files: res/xml/syncadapter.xml, res/xml/cont
 run again the Makefile script by calling "make"
 '''
 
-open project with android studio
-- new package name ex com.aaa
-- move linphone to new folder
+open project with android studio    
+- new package name ex com.aaa    
+In Android Panel, Select java, MouseR > New > Package > Select OK > new package name > OK
+- move linphone to new folder    
+Use MouseL drag over
 - select move all folder
-- replace all old package name to new package name
+- replace all old package name to new package name    
+(Replace in path)
