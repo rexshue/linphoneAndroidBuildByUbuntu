@@ -1,10 +1,10 @@
-#2 Change Package Name
+## Change Package Name
 
 ex.    
 old > org.linphone
 new > com.aaa.linphone
 
-modify with git
+***modify with git***
 ```
 To create an apk with a different package name
 You need to edit the build.gradle file:
@@ -15,11 +15,11 @@ You need to edit the build.gradle file:
 - run again the Makefile script by calling "make"
 ```
 
-*** open project with android studio ***   
+***open project with android studio***   
 - new package name ex com.aaa    
 In Android Panel, Select java, MouseR > New > Package > Select OK > new package name > OK
 - move linphone to new folder    
-Use MouseL drag over
+Use MouseL drag linphone folder from old to new place
 - select move all folder
 - replace all old package name to new package name    
 (Replace in path)
